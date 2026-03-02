@@ -1,17 +1,68 @@
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937;
+  padding: 15px 30px;
+  color: white;
 }
 
-main {
-  animation: slideUp 0.4s ease-out;
+nav h2 {
+  font-size: 22px;
 }
 
-button:active {
-  transform: scale(0.95);
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-input:focus, select:focus {
-  outline: none;
-  border-color: #2563eb;
+nav a:hover {
+  color: #4f46e5;
+}
+
+/* Centered Forms */
+.form-container {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.form-container form {
+  display: inline-block;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 40px;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+}
+
+/* Course Card */
+.course-card {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-card h4 {
+  margin-bottom: 5px;
 }
